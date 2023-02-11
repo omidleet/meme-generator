@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+main {
+    padding: 36px;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    /* background-image: linear-gradient(to right, purple , grey); */
+    background-image: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+    color:white;
+    height: 65px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* text-align: center; */
+}
+
+.header--logo {
+    height: 100%;
+    margin:1rem;
+}
+
+.header--title{
+    margin: 1rem;
+    /* pushes the subtitle to the right */
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.header--subtitle{
+    justify-content: right;
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form {
+    display:grid;
+    /* two 40px rows, evenly divide the columns with fraction units */
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+
+.form--input {
+    border-radius: 5px;
+    border: 1px solid #A626D3;
+    text-indent: 5px    ;
+}
+
+.form--button {
+    /* going from the beginning to the end */
+    grid-column: 1 / -1;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+}
